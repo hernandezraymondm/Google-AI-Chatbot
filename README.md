@@ -2,6 +2,8 @@
 
 **This AI chatbot is crafted to efficiently handle various tasks, delivering smart and effective responses to user queries. Developed using Python and Flask.**
 
+![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/e67a7cef-0696-4f48-9993-470f3406ae59)
+
 ## Tech Stack:
 
 Google-Generative AI, Python, Flask, HTML, CSS, JavaScript
@@ -40,8 +42,4 @@ python app.py
 http://localhost:5000/
 ```
 
-### Preview
-
-
-![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/e67a7cef-0696-4f48-9993-470f3406ae59)
 
