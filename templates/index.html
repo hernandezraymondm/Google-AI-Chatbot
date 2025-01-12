@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ url_for('static', filename='logo.svg') }}"
+    />
+    <title>AI Chatbot</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bot-message-square"
+            >
+              <path d="M12 6V2H8" />
+              <path
+                d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z"
+              />
+              <path d="M2 12h2" />
+              <path d="M9 11v2" />
+              <path d="M15 11v2" />
+              <path d="M20 12h2" />
+            </svg>
+            <span>AI Chatbot</span>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <button id="newChatBtn" class="new-chat-btn">+ New Chat</button>
+          <div id="historyItems" class="history-items"></div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="main-header">
+          <div id="currentChatTitle" class="header-title">New Chat</div>
+        </header>
+
+        <div class="chat-container">
+          <div class="chat-editor">
+            <div class="chat-messages" id="chatMessages"></div>
+          </div>
+        </div>
+
+        <footer class="chat-input">
+          <input
+            type="text"
+            id="userInput"
+            autocomplete="off"
+            placeholder="Start typing"
+          />
+          <button id="sendButton">Send</button>
+        </footer>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
