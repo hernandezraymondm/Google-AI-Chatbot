@@ -42,5 +42,6 @@ http://localhost:5000/
 
 ### Preview
 
-![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/d9b18948-c00b-4eba-9844-5f32599bb1ae)
+
+![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/e67a7cef-0696-4f48-9993-470f3406ae59)
 
